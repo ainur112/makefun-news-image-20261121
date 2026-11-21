@@ -53,6 +53,13 @@ Citation ids map to the retrieval ledger (news_work/ledger.json).
 - NBA: Lakers edge the Kings; a Nets player torched by his brother's 35-point
   game-winner. [9]
 - New Mexico: a mother and her two children killed by the father. [9]
+- Oceania: Australia host England in the first Men's T20I at the MCG, 7:15pm. [22]
+- Oceania: a Brisbane P-plater hits five pedestrians; all survive without serious
+  injury. [23]
+- South America: Copa Sudamericana final, Boca Juniors v Atletico Mineiro in
+  Barranquilla. [20]
+- South America: a magnitude 6.7 earthquake shakes central Peru (Junin), tremors
+  felt in Lima, no immediate casualties; 20 Nov 19:09 local = 21 Nov UTC. [21]
 
 ## Sport
 - Premier League: Newcastle host leaders Arsenal; Man City v Fulham, Chelsea v
@@ -78,3 +85,4 @@ Citation ids map to the retrieval ledger (news_work/ledger.json).
 - EU EUR 1bn European Peace Facility military aid to Ukraine — 20 Nov 2026
   (Council press release).
 - Nigeria travel advisory over 16 deaths transiting Addis Ababa — 13 Nov 2026.
+- Australia-New Zealand Annual Leaders' Meeting (Noosa) — 6 June 2026, not Nov.

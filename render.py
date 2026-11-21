@@ -250,6 +250,10 @@ BRIEFS = [
     ("USA", PURPLE, "MLBPA rejects the league's international draft proposal."),
     ("USA", PURPLE, "NBA: Lakers edge Kings; Nets star beaten by brother's 35."),
     ("USA", PURPLE, "New Mexico: mother and two children killed by father."),
+    ("OCEANIA", TEAL, "Australia host England in T20I at the MCG."),
+    ("OCEANIA", TEAL, "Brisbane P-plater hits 5 pedestrians; all survive."),
+    ("S.AMERICA", GOLD, "Copa Sudamericana final: Boca v Mineiro, Barranquilla."),
+    ("S.AMERICA", GOLD, "M6.7 quake shakes central Peru; felt in Lima, no casualties."),
 ]
 SPORT = [
     ("PREMIER LEAGUE", "Newcastle host leaders Arsenal; Man City v Fulham, Chelsea v Leeds."),
@@ -289,8 +293,8 @@ def render(out_path):
     hb = block(d, M, ly + 18, LEAD["head"], head_f, CW, INK, leading=1.12)
     ck("lead headline", hb, 208)
     # illustration left, deck right
-    iy = 218
-    iw, ih = 200, 150
+    iy = 214
+    iw, ih = 200, 132
     d.rectangle([M, iy, M + iw, iy + ih], outline=RULE, width=1)
     ICONS[LEAD["icon"]](d, M, iy, iw, ih)
     deck_x = M + iw + 22
@@ -298,10 +302,10 @@ def render(out_path):
     deck_f = font(SANS, 16)
     db = block(d, deck_x, iy + 4, LEAD["deck"], deck_f, deck_w, SOFT, leading=1.3)
     ck("lead deck", db, iy + ih)
-    rule(d, M, W - M, 380, 2, RULE_DARK)
+    rule(d, M, W - M, 356, 2, RULE_DARK)
 
     # ===== Grid 3 x 2 =====
-    gy = 392
+    gy = 368
     gap = 22
     colw = (CW - 2 * gap) / 3
     rowh = 150
@@ -334,8 +338,8 @@ def render(out_path):
     colx = [M, M + half + 24]
     bf = font(SANS, 12)
     bfb = font(SANSB, 12)
-    per_col = 7
-    rowh_b = 24
+    per_col = 9
+    rowh_b = 22
     vrule(d, int(M + half + 12), by2, by2 + per_col * rowh_b, 1, RULE)
     for i, (rg, col, txt) in enumerate(BRIEFS):
         c = 0 if i < per_col else 1
@@ -368,7 +372,7 @@ def render(out_path):
     rule(d, M, W - M, sy + 46, 1, RULE_DARK)
 
     # ===== Footer =====
-    fy = sy + 54
+    fy = sy + 50
     ff = font(SANS, 12)
     foot = "Compiled from wire reports of 21 November 2026  ·  Events verified to the day in any time zone"
     d.text((M, fy), foot, font=ff, fill=SOFT, anchor="la")
